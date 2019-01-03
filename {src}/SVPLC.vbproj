@@ -1,0 +1,387 @@
+<?xml version="1.0"?>
+<Project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <ProjectGuid>{924A2DE0-4187-45D5-9D29-22371D2FB5BC}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <AssemblyName>SVPLCApplication</AssemblyName>
+    <OutputType>WinExe</OutputType>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <DebugSymbols>true</DebugSymbols>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <DocumentationFile>SVPLCApplication.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <Optimize>false</Optimize>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <DebugSymbols>false</DebugSymbols>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <DocumentationFile>SVPLCApplication.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Core" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.vb">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="myGroupBox2.vb">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="My\MyApplication.vb">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="TabStyleAngledProvider.vb">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="My\MyComputer.vb">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="TabStyleChromeProvider.vb">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="TabStyleDefaultProvider.vb">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="My\MyProject.vb">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="TabStyleIE8Provider.vb">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="TabStyleNoneProvider.vb">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="myGroupBox.vb">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="TabStyleProvider.vb">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="PictureBox1.vb">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="TabStyleRoundedProvider.vb">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="TabStyleVisualStudioProvider.vb">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="CustomTabControl.vb">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="TabStyleVS2010Provider.vb">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="ThemedColors.vb">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="TransparentRichTextBox.vb">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="My\MySettings.vb">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Resources.Designer.vb">
+      <AutoGen>true</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTimeSharedInput>true</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="My\MySettingsProperty.vb">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="TabStyle.vb">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="NativeMethods.vb">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Module1.vb">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="FormBienvenue.vb">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formapropos.vb">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormCO2.vb">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormCO1.vb">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formbmp.vb">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormBilan.vb">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormExplicationCalendrierLunaire.vb">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormBDDFICHE.vb">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formpaypal.vb">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormLOGO.vb">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormBDDASS.vb">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formpropphoto.vb">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formajoutbouton.vb">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormBDNumerique.vb">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formaddmat.vb">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormInputbox.vb">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormBDDCal.vb">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Fiche.vb">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormBDDROT.vb">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormInternet.vb">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formaddrecolte.vb">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formbilanfin.vb">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormMonJardin.vb">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormMSGBOXPerso.vb">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Calculatrice.vb">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormCalLun.vb">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formchangefiche.vb">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormCO0.vb">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormPasPas.vb">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+      <SubType>Form</SubType>
+    </Compile>
+    <EmbeddedResource Include="FormBienvenue.resx">
+      <DependentUpon>FormBienvenue.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formapropos.resx">
+      <DependentUpon>Formapropos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormCO2.resx">
+      <DependentUpon>FormCO2.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormCO1.resx">
+      <DependentUpon>FormCO1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formbmp.resx">
+      <DependentUpon>Formbmp.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormBilan.resx">
+      <DependentUpon>FormBilan.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormExplicationCalendrierLunaire.resx">
+      <DependentUpon>FormExplicationCalendrierLunaire.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormBDDFICHE.resx">
+      <DependentUpon>FormBDDFICHE.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formpaypal.resx">
+      <DependentUpon>Formpaypal.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormLOGO.resx">
+      <DependentUpon>FormLOGO.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormBDDASS.resx">
+      <DependentUpon>FormBDDASS.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formpropphoto.resx">
+      <DependentUpon>Formpropphoto.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formajoutbouton.resx">
+      <DependentUpon>Formajoutbouton.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormBDNumerique.resx">
+      <DependentUpon>FormBDNumerique.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formaddmat.resx">
+      <DependentUpon>Formaddmat.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormInputbox.resx">
+      <DependentUpon>FormInputbox.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormBDDCal.resx">
+      <DependentUpon>FormBDDCal.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fiche.resx">
+      <DependentUpon>Fiche.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormBDDROT.resx">
+      <DependentUpon>FormBDDROT.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormInternet.resx">
+      <DependentUpon>FormInternet.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formaddrecolte.resx">
+      <DependentUpon>Formaddrecolte.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formbilanfin.resx">
+      <DependentUpon>Formbilanfin.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormMonJardin.resx">
+      <DependentUpon>FormMonJardin.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormMSGBOXPerso.resx">
+      <DependentUpon>FormMSGBOXPerso.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Calculatrice.resx">
+      <DependentUpon>Calculatrice.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormCalLun.resx">
+      <DependentUpon>FormCalLun.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formchangefiche.resx">
+      <DependentUpon>Formchangefiche.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormCO0.resx">
+      <DependentUpon>FormCO0.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormPasPas.resx">
+      <DependentUpon>FormPasPas.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+    <OptionCompare>Binary</OptionCompare>
+    <OptionStrict>Off</OptionStrict>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+</Project>
