@@ -1,6 +1,10 @@
 # SVPLC
 Logiciel de jardinage
 
+Téléchargez la dernière version ici:
+
+https://drive.google.com/file/d/0B6GBFvoDqCvdTlc1ckY3MmNudkk/view?usp=sharing
+
 ## PRESENTATION
 
 SVPLC a été initialement développé pour répondre au problème d'optimisation du potager. C'est avant tout un programme de calcul dont l'objectif est de dire au jardinier où il doit planter quoi pour que son jardin soit dans les meilleures conditions pour produire. Ce problème qui est très simple lorsque l'on veut planter 3 légumes en rangée par exemple se révèle être très compliqué  quand il s'agit de faire tourner sur 3 ans 9 légumes sur des parcelles pas franchement simples. SVPLC vous donne une solution. Néanmoins, il ne fait pas le travail à votre place! Un esprit critique ainsi que l'analyse des calculs effectués permettra au jardinier d'orienter le logiciel et de trouver la réelle bonne configuration.
